@@ -4,7 +4,7 @@ import Score from './components/Score';
 import { shuffleArray } from './utils/utilities';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import quizData from './data/quizData';
+
 
 
 function App() {
