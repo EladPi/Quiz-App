@@ -4,7 +4,7 @@ import Score from './components/Score';
 import { shuffleArray } from './utils/utilities';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import quizData from './data/quizData';
 
 
 function App() {
@@ -12,6 +12,8 @@ function App() {
     const [score, setScore] = useState(0);
     const [questions, setQuestions] = useState(shuffleArray([...quizData]));
     const [userAnswers, setUserAnswers] = useState([]);
+    const [showResults, setShowResults] = useState(false);
+    
 
     const handleAnswerOptionClick = (index) => {
       // Record user's answer
@@ -29,17 +31,22 @@ function App() {
       if (nextQuestion < questions.length) {
           setCurrentQuestion(nextQuestion);
       } else {
-          setScore(true); // Later, consider changing this logic.
+          setShowResults(true);
       }
   };
   
 
     const restartQuiz = () => {
-      const shuffledQuestions = shuffleArray(quizData);
-      setQuestions(shuffleArray([...shuffledQuestions]));
-      setCurrentQuestion(0);
-      setScore(0);
-  };
+        // Shuffle questions and reset them
+        const shuffledQuestions = shuffleArray([...quizData]);
+        setQuestions(shuffledQuestions);
+        
+        // Reset other states
+        setCurrentQuestion(0);
+        setScore(0);
+        setUserAnswers([]);
+        setShowResults(false);
+      };
 
 
 
@@ -51,16 +58,27 @@ function App() {
     <div className="container mt-5 quiz-container">
         <div className="card shadow">
             <div className="card-body text-center">
+            {showResults ? (
+                <div>
+                    <h2 className="card-title">Quiz Results</h2>
+                    <p>You answered {userAnswers.length} questions.</p>
+                    <p>You got {score} of them right.</p>
+                    <button 
+                        className="btn btn-primary mt-4 d-block w-100"
+                        onClick={restartQuiz}
+                    >
+                        Restart Quiz
+                    </button>
+                </div>
+            ) : (
+                <>
                 <p className="question-number mb-2">Question {currentQuestion + 1} of {questions.length}</p>
-                
                 <Question 
                   data={questions[currentQuestion]}
                   handleAnswerOptionClick={handleAnswerOptionClick}
                   userAnswers={userAnswers}
                   currentQuestion={currentQuestion}
                 />
-
-
                 <button 
                     className="btn btn-danger mt-4 d-block w-100 restart"
                     onClick={restartQuiz}
@@ -71,12 +89,15 @@ function App() {
                 <div className="mt-3">
                     <Score score={score} />
                 </div>
+
+                </>
+                )
+            }
             </div>
         </div>
-    </div>
+  </div>     
 );
 }
-
 
 
 export default App;
