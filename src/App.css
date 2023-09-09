@@ -1,0 +1,41 @@
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9; /* Light grayish-blue background */
+  color: #333; /* Darker text for better readability */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  border-radius: 15px;
+  background-color: white; /* Bright background for the quiz container */
+  width: 90%;
+  max-width: 600px; /* Limit the width for very wide screens */
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+/* Score styles */
+.quiz-container {
+  margin-top: 20px;
+  font-weight: 600; /* If you want all text within the container to be semi-bold */
+}
+
+.question-number {
+  font-size: 0.9rem;
+  margin-top: 5px; /* Adjust as needed to place the text slightly below the top */
+}
+
+
