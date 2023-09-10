@@ -9,6 +9,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow-x: hidden; /* This prevents horizontal scrolling */
+  overflow-y: auto; /* This allows vertical scrolling if content height exceeds the viewport */
 }
 
 .app {
@@ -29,13 +31,39 @@ h2 {
 
 /* Score styles */
 .quiz-container {
-  margin-top: 20px;
-  font-weight: 600; /* If you want all text within the container to be semi-bold */
+  margin: 50px 30px; 
+  max-height: 99vh; /* Set a maximum height relative to the viewport */
+  overflow-y: auto; /* Add a scrollbar if the content exceeds this height */
+  font-weight: 600; 
 }
 
 .question-number {
   font-size: 0.9rem;
   margin-top: 5px; /* Adjust as needed to place the text slightly below the top */
 }
+
+.results-container {
+  margin: 20px 0; /* This gives a margin of 20px to the top and bottom */
+  
+}
+
+
+.result-question {
+  margin: 20px 0; /* Adding margin to each question result */
+  padding: 15px; /* Adding padding for better spacing */
+  border: 1px solid #e0e0e0; /* A light border for each question result */
+  border-radius: 8px; /* Rounded corners for a soft look */
+  
+}
+
+/* In App.css */
+
+/* Adjustments for screens smaller than 600px */
+@media (max-width: 600px) {
+  .quiz-container {
+    margin: 30px 10px; /* Reduce margin on small screens */
+  }
+}
+
 
 
