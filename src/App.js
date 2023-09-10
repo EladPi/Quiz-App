@@ -18,6 +18,7 @@ function App() {
 
 
 
+
   const handleAnswerOptionClick = (index) => {
     // Record user's answer
     const newAnswers = [...userAnswers];

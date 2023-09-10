@@ -32,7 +32,7 @@ h2 {
 /* Score styles */
 .quiz-container {
   margin: 50px 30px; 
-  max-height: 99vh; /* Set a maximum height relative to the viewport */
+  max-height: 98vh; /* Set a maximum height relative to the viewport */
   overflow-y: auto; /* Add a scrollbar if the content exceeds this height */
   font-weight: 600; 
 }
