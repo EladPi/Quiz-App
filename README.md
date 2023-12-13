@@ -22,12 +22,7 @@ Developed using JavaScript, React, and Expo React Native, Quiz-Quest leverages t
 
 ## Images
 
-![IMG_4675](https://github.com/EladPi/Quiz-App/assets/127990792/1dac71df-6f55-42d7-9122-0b5f77a98bdf)
-![IMG_4676](https://github.com/EladPi/Quiz-App/assets/127990792/f71834a5-6e9d-468b-8978-ec4cac742405)
-![IMG_4677](https://github.com/EladPi/Quiz-App/assets/127990792/f349ccd8-1313-47db-8c2e-e3575a3c9767)
-![IMG_4678](https://github.com/EladPi/Quiz-App/assets/127990792/e739b0c9-2c5a-4951-9eb4-7c778c52ee5c)
-![IMG_4679](https://github.com/EladPi/Quiz-App/assets/127990792/448dd957-3947-4d8c-ba34-7c2491ffbac3)
-
+![Template Quiz Game](https://github.com/EladPi/Quiz-App/assets/127990792/ea0a040a-8419-4303-a434-d5ba00434e26)
 
 -----------------------------------------------------------
 
