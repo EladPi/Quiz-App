@@ -1,3 +1,36 @@
+
+# Quiz-Quest
+
+Welcome to Quiz-Quest, an interactive quiz game application designed for quiz enthusiasts and knowledge seekers alike! Whether you're looking to test your knowledge or simply have some fun, Quiz-Quest offers a personalized quiz experience tailored to your preferences.
+
+## Engaging Quiz Experience
+
+At the heart of Quiz-Quest is the flexibility it offers:
+
+- **Choose Your Subject**: Dive into a variety of subjects and explore different areas of knowledge.
+- **Customize Your Challenge**: Set the number of questions, type of questions, and difficulty level to suit your quiz appetite.
+- **Intuitive Gameplay**: Answer questions carefully crafted to challenge and educate.
+- **Quick Start Feature**: Short on time? Let the app pick a random quiz for you - a perfect blend of spontaneity and challenge.
+
+## For Everyone
+
+Quiz-Quest is crafted for a general audience, making it a great choice for anyone looking to engage in a fun and educational quiz experience. Whether you're a trivia novice or a seasoned quiz master, Quiz-Quest has something for you.
+
+## Built with Modern Technologies
+
+Developed using JavaScript, React, and Expo React Native, Quiz-Quest leverages the robust Open Trivia DB API to bring you a vast array of questions and categories. This modern tech stack ensures a smooth and responsive experience across different devices.
+
+## Images
+
+![IMG_4675](https://github.com/EladPi/Quiz-App/assets/127990792/1dac71df-6f55-42d7-9122-0b5f77a98bdf)
+![IMG_4676](https://github.com/EladPi/Quiz-App/assets/127990792/f71834a5-6e9d-468b-8978-ec4cac742405)
+![IMG_4677](https://github.com/EladPi/Quiz-App/assets/127990792/f349ccd8-1313-47db-8c2e-e3575a3c9767)
+![IMG_4678](https://github.com/EladPi/Quiz-App/assets/127990792/e739b0c9-2c5a-4951-9eb4-7c778c52ee5c)
+![IMG_4679](https://github.com/EladPi/Quiz-App/assets/127990792/448dd957-3947-4d8c-ba34-7c2491ffbac3)
+
+
+-----------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
